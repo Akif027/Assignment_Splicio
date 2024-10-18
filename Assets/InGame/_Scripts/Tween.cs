@@ -31,7 +31,7 @@ public static class Tween
         floatingText.transform.position = Camera.main.WorldToScreenPoint(startPosition);
 
         // Animate the floating text to the health bar using DOTween
-        floatingText.transform.DOMove(healthBarTransform.position, 1.5f).OnComplete(() =>
+        floatingText.transform.DOMove(healthBarTransform.position, 1f).OnComplete(() =>
         {
 
             // Destroy the text once it reaches the health bar
