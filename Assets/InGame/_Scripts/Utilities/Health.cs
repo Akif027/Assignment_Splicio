@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
 
 public class Health : MonoBehaviour
 {
@@ -10,7 +9,6 @@ public class Health : MonoBehaviour
 
     [Header("UI References")]
     [SerializeField] private Image healthBar;           // Reference to the health bar image
-
 
     private static Health _instance;
     public static Health Instance => _instance;
@@ -29,6 +27,7 @@ public class Health : MonoBehaviour
 
     private void Start()
     {
+        currentHealth = 0f; // Optional: ensure starting from 0
         UpdateHealthBar(); // Initialize health bar at the start
     }
 
@@ -38,6 +37,8 @@ public class Health : MonoBehaviour
         // Increase health and clamp it to maxHealth
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
 
+        // Update the health bar visually
+        UpdateHealthBar();
 
         // Reset health if it reaches max
         if (currentHealth >= maxHealth)
@@ -52,9 +53,8 @@ public class Health : MonoBehaviour
     {
         if (healthBar != null)
         {
+            // Calculate fill amount based on currentHealth and maxHealth
             healthBar.fillAmount = currentHealth / maxHealth;
         }
     }
-
-
 }
