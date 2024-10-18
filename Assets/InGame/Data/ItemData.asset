@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: ItemData
   m_EditorClassIdentifier: 
   weaponItems:
-  - itemName: A
-    itemSprite: {fileID: 21300000, guid: b7e53c85525ea49918976cee801b77c5, type: 3}
-  - itemName: B
-    itemSprite: {fileID: 21300000, guid: bfaa6a06070d3461a8c6b100e9fd503c, type: 3}
-  - itemName: C
-    itemSprite: {fileID: 21300000, guid: a3490479e378b41e6b9d2834fe8d2fa9, type: 3}
-  - itemName: D
-    itemSprite: {fileID: 21300000, guid: 96a2091588fd54375abc950ec90886ab, type: 3}
+  - itemName: Bow
+    itemSprite: {fileID: 21300000, guid: ce18f158b6b117244b24aaf3df56b729, type: 3}
+  - itemName: Grenade
+    itemSprite: {fileID: 21300000, guid: 4931de931b61f214a837d92be018958c, type: 3}
+  - itemName: Tommy
+    itemSprite: {fileID: 21300000, guid: 9ea26a7b720311a48b6ed75841bcea1d, type: 3}
+  - itemName: Trident
+    itemSprite: {fileID: 21300000, guid: 95860a760b95b1948bd6f529ba7bc9d6, type: 3}
+  - itemName: Weapon
+    itemSprite: {fileID: 21300000, guid: 34258356b3136a4429ba784e3ef0d63e, type: 3}
