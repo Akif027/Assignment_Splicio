@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 9030263847079044248}
   - component: {fileID: 390211932100961733}
   - component: {fileID: 4419434401527810362}
-  - component: {fileID: 2086539660511883154}
-  - component: {fileID: 3511685590576558404}
   - component: {fileID: 7414412513505776660}
+  - component: {fileID: 662295574077553614}
   m_Layer: 3
   m_Name: PlayerCube
   m_TagString: Cube
@@ -134,45 +133,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 114
+  m_Constraints: 112
   m_CollisionDetection: 1
---- !u!114 &2086539660511883154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9202273380336830459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9207d582396f84cb7dffb68a4cf6a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionFeedback: {fileID: 0}
-  collisionFeedback2: {fileID: 0}
-  Force: 20
-  ActionCamera2: {fileID: 0}
---- !u!65 &3511685590576558404
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9202273380336830459}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1.07}
-  m_Center: {x: 0, y: 0, z: -2.38}
 --- !u!114 &7414412513505776660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,4 +150,18 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
-  healthIncreaseDuration: 0.5
+--- !u!114 &662295574077553614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202273380336830459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3359c52b18e6fa43a11a57b63dce786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  forceCooldown: 1
+  collisionFeedback: {fileID: 0}
